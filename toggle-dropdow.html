@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <link rel="stylesheet" href="style_cga.css">
+
+    <title>Toggle dropdown</title>
+    <style type="text/css">
+         .showMorep {
+        display: none;
+    }
+    </style>
+  </head>
+  <body>
+
+     <h1>Toggle Dropdown</h1>
+
+     <table class="table table-hover f14 font-f-ir dataTable " id="_TableRegression">
+                <thead>
+                    <tr>
+                        <th >Sr.#</th>
+                        <th> </th>
+                        <th>Regression ID</th>
+                        <th>Title</th>
+                        <th>Created By</th>
+                        <th>Scheduled By</th>
+                        <th>Server</th>
+                        <th>No. of Benchmarks</th>
+                        <th>Action</th>
+                        <th>Icon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>
+                          test
+
+                        </td>
+                      
+                            <td style="width: 2px;"><span style="color: #edd134;" class="fa fa-star checked"></span> </td>
+                       
+<td></td>
+                        
+                        <td class="font-f-irb">regressionID</td>
+
+
+                        <td style="cursor: pointer">item.title</td>
+
+
+                        <td>--</td>
+                        <td>
+                            <div class="sch-box">
+                                <p>
+                                    <span class="circle-sch"></span>
+                                    Scheduled: Monday, December 13
+                                </p>
+                                <div class="sch-tooltip text-left">
+                                    <h2 class="text-uppercase f18 font-f-irb text-left mb-0">Regression Title</h2>
+                                    <div class="py-4 px-3 font-f-ir f16 color-black">
+                                        <div class="mb-2">Scheduled at</div>
+                                        <span class="mb-2">Monday</span>
+                                        <span>December 13</span>
+                                        <div class="mb-4">9:00 am</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-copy"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-trash-alt"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>tem.ServerName</td>
+                        <td>tem.total_Benchmarks</td>
+                        <td class="tooltip-holder">
+
+
+                           <!-- run tooltip --> 
+                            <div class="tooltip-box d-inline-block">
+                                <span class="icon clickMorep" id="btn_pop"><i class="fa fa-play"></i></span>
+                                <div class="tooltiptext t-run text-left showMorep"  data-toggle="dropdown">
+                                    <h2 class="text-uppercase f16 font-f-irb text-left">Run Setting</h2>
+                                    <div class="row s-dropdown">
+                                        <input type="hidden" name="name" value="item.regressionID" id="_regressionid" />
+
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_serverid">
+                                               <!--  *<option selected disabled>Select Server</option>* -->
+                                               
+                                                    <option value="items.ID">tems.Name</option>
+
+                                              
+
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_toolId">
+                                                <option selected disabled>Select Tool</option>
+                                               
+                                                        <option value="itemp.ID">itemp.Name</option>
+                                                   
+                                                        <option value="itemp.ID" selected>itemp.Name</option>
+                                                   
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_buildId">
+                                                <option selected value="Latest">Latest</option>
+                                                
+                                                    <option value="itemBuild.BuildID">itemBuild.BuildName</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_strategyId">
+                                                <!-- *<option selected disabled>Select Strategy</option>* -->
+                                                
+                                                        <option value="strategyitem.ID">strategyitem.Name</option>
+                                                   
+                                                        <option value="strategyitem.ID" selected>strategyitem.Name</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_stageId">
+                                                <!-- *<option selected>Select Stage</option>* -->
+                                                
+                                                    <option value="itemstage.stageID">itemstage.StageName</option>
+                                               
+                                            </select>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <button type="button" class="btnbasic btn-white btn-tooltip">Cancel</button>
+                                            <button type="button" class="btnbasic btn-tooltip">RUN</button>
+                                        </div>
+                                    </div>
+                                    <div class="table-holder table-responsive t-reglist">
+                                        <table class="table table-hover f14 font-f-ir text-center table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Server</th>
+                                                    <th>Tool</th>
+                                                    <th>Build</th>
+                                            
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                
+                                                    <tr>
+                                                        <td>itemSch.serverName</td>
+                                                        <td>itemSch.toolName</td>
+                                                        <td>itemSch.buildno</td>
+                                                    </tr>
+                                                
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- * run tooltip * -->
+
+                            <span class="icon-divider"></span>
+
+                            <!-- * calendar tooltip * -->
+                            <div class="tooltip-box d-inline-block">
+                                <i class="fa fa-calendar-alt"></i>
+                                <div class="tooltiptext text-left">
+                                    <div class="row s-dropdown">
+                                        <div class="col-6">
+                                            <select class="custom-select basic-sel s-server">
+                                                <option selected value="-1">Select Server</option>
+                                                <option value="1">Khyber</option>
+                                                <option value="2">AWS</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="custom-select basic-sel s-server">
+                                                <option selected>Select Strategy</option>
+                                                <option value="1">Perfomance</option>
+                                                <option value="2">Area</option>
+                                                <option value="3">Custom Strategy 1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="custom-select basic-sel s-server">
+                                                <option selected>Select Stage</option>
+                                                <option value="1">Complete</option>
+                                                <option value="2">Synthesis Only</option>
+                                                <option value="3">Place &Aacute; Route</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <h2 class="text-uppercase f16 font-f-irb text-left">Schedule</h2>
+                                    <div class="float-left mb-3">
+                                        <div class="d-flex">
+                                            <select class="custom-select basic-sel sel-day">
+                                                <option selected>Date</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                            </select>
+                                            <select class="custom-select basic-sel sel-day">
+                                                <option selected>Month</option>
+                                                <option value="13">September</option>
+                                                <option value="14">November</option>
+                                                <option value="15">December</option>
+                                            </select>
+                                            <input type="time" class="" />
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox overflow-hidden mb-3 c-pointer">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label f-lh22 c-pointer" for="customCheck1">Repeat</label>
+                                    </div>
+                                    <div class="float-left w-100 mb-4">
+                                        <select class="custom-select basic-sel sel-day">
+                                            <option selected>Daily</option>
+                                            <option value="14">Weekly</option>
+                                            <option value="15">Monthly</option>
+                                        </select>
+                                    </div>
+                                    <div class="float-left w-100 text-right">
+                                        <button type="button" class="btnbasic btn-white btn-tooltip">Cancel</button>
+                                        <button type="button" class="btnbasic btn-tooltip">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- * calendar tooltip * -->
+                        </td>
+                       
+                    </tr>
+                                    <tr>
+                        <td>
+                          test
+
+                        </td>
+                      
+                            <td style="width: 2px;"><span style="color: #edd134;" class="fa fa-star checked"></span> </td>
+                       
+<td></td>
+                        
+                        <td class="font-f-irb">regressionID</td>
+
+
+                        <td style="cursor: pointer">item.title</td>
+
+
+                        <td>--</td>
+                        <td>
+                            <div class="sch-box">
+                                <p>
+                                    <span class="circle-sch"></span>
+                                    Scheduled: Monday, December 13
+                                </p>
+                                <div class="sch-tooltip text-left">
+                                    <h2 class="text-uppercase f18 font-f-irb text-left mb-0">Regression Title</h2>
+                                    <div class="py-4 px-3 font-f-ir f16 color-black">
+                                        <div class="mb-2">Scheduled at</div>
+                                        <span class="mb-2">Monday</span>
+                                        <span>December 13</span>
+                                        <div class="mb-4">9:00 am</div>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-copy"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-trash-alt"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>tem.ServerName</td>
+                        <td>tem.total_Benchmarks</td>
+                        <td class="tooltip-holder">
+
+
+                           <!-- run tooltip --> 
+                            <div class="tooltip-box d-inline-block">
+                                <span class="icon clickMorep" id="btn_pop"><i class="fa fa-play"></i></span>
+                                <div class="tooltiptext t-run text-left showMorep"  data-toggle="dropdown">
+                                    <h2 class="text-uppercase f16 font-f-irb text-left">Run Setting</h2>
+                                    <div class="row s-dropdown">
+                                        <input type="hidden" name="name" value="item.regressionID" id="_regressionid" />
+
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_serverid">
+                                               <!--  *<option selected disabled>Select Server</option>* -->
+                                               
+                                                    <option value="items.ID">tems.Name</option>
+
+                                              
+
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_toolId">
+                                                <option selected disabled>Select Tool</option>
+                                               
+                                                        <option value="itemp.ID">itemp.Name</option>
+                                                   
+                                                        <option value="itemp.ID" selected>itemp.Name</option>
+                                                   
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_buildId">
+                                                <option selected value="Latest">Latest</option>
+                                                
+                                                    <option value="itemBuild.BuildID">itemBuild.BuildName</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_strategyId">
+                                                <!-- *<option selected disabled>Select Strategy</option>* -->
+                                                
+                                                        <option value="strategyitem.ID">strategyitem.Name</option>
+                                                   
+                                                        <option value="strategyitem.ID" selected>strategyitem.Name</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="custom-select basic-sel s-server" id="_stageId">
+                                                <!-- *<option selected>Select Stage</option>* -->
+                                                
+                                                    <option value="itemstage.stageID">itemstage.StageName</option>
+                                               
+                                            </select>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <button type="button" class="btnbasic btn-white btn-tooltip">Cancel</button>
+                                            <button type="button" class="btnbasic btn-tooltip">RUN</button>
+                                        </div>
+                                    </div>
+                                    <div class="table-holder table-responsive t-reglist">
+                                        <table class="table table-hover f14 font-f-ir text-center table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Server</th>
+                                                    <th>Tool</th>
+                                                    <th>Build</th>
+                                            
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                
+                                                    <tr>
+                                                        <td>itemSch.serverName</td>
+                                                        <td>itemSch.toolName</td>
+                                                        <td>itemSch.buildno</td>
+                                                    </tr>
+                                                
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- * run tooltip * -->
+
+                            <span class="icon-divider"></span>
+
+                            <!-- * calendar tooltip * -->
+                            <div class="tooltip-box d-inline-block">
+                                <i class="fa fa-calendar-alt"></i>
+                                <div class="tooltiptext text-left">
+                                    <div class="row s-dropdown">
+                                        <div class="col-6">
+                                            <select class="custom-select basic-sel s-server">
+                                                <option selected value="-1">Select Server</option>
+                                                <option value="1">Khyber</option>
+                                                <option value="2">AWS</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="custom-select basic-sel s-server">
+                                                <option selected>Select Strategy</option>
+                                                <option value="1">Perfomance</option>
+                                                <option value="2">Area</option>
+                                                <option value="3">Custom Strategy 1</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="custom-select basic-sel s-server">
+                                                <option selected>Select Stage</option>
+                                                <option value="1">Complete</option>
+                                                <option value="2">Synthesis Only</option>
+                                                <option value="3">Place &Aacute; Route</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <h2 class="text-uppercase f16 font-f-irb text-left">Schedule</h2>
+                                    <div class="float-left mb-3">
+                                        <div class="d-flex">
+                                            <select class="custom-select basic-sel sel-day">
+                                                <option selected>Date</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                            </select>
+                                            <select class="custom-select basic-sel sel-day">
+                                                <option selected>Month</option>
+                                                <option value="13">September</option>
+                                                <option value="14">November</option>
+                                                <option value="15">December</option>
+                                            </select>
+                                            <input type="time" class="" />
+                                        </div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox overflow-hidden mb-3 c-pointer">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label f-lh22 c-pointer" for="customCheck1">Repeat</label>
+                                    </div>
+                                    <div class="float-left w-100 mb-4">
+                                        <select class="custom-select basic-sel sel-day">
+                                            <option selected>Daily</option>
+                                            <option value="14">Weekly</option>
+                                            <option value="15">Monthly</option>
+                                        </select>
+                                    </div>
+                                    <div class="float-left w-100 text-right">
+                                        <button type="button" class="btnbasic btn-white btn-tooltip">Cancel</button>
+                                        <button type="button" class="btnbasic btn-tooltip">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- * calendar tooltip * -->
+                        </td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery.slim.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+
+    <script>
+    $(function () {
+        $('.clickMorep').on('click', function () {       
+            if ($(this).next('.showMorep').length) {
+                var show_more = $(this).next('.showMorep');
+            } else {
+                var show_more = $(this).parent().next('.showMorep');
+            }
+            $('.showMorep').not(show_more).slideUp('fast');
+            show_more.slideToggle('fast');            
+        });       
+    });
+    $(document).mouseup(function (e) {
+        var container = $(".showMorep");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.hide();
+        }
+    });
+</script>
+
+  </body>
+</html>
+
+

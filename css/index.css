@@ -1,0 +1,52 @@
+body{
+	background:#fff;
+	font-family: sans-serif;
+}
+@font-face{
+	font-family: 'Monoton-Regular';
+	src:url(../fonts/Monoton-Regular.ttf);
+}
+
+@font-face{
+	font-family: 'Montserrat-Light';
+	src:url('../fonts/Montserrat-Light.otf');
+}
+@font-face{
+	font-family: 'Montserrat-ExtraBold';
+	src:url('../fonts/Montserrat-ExtraBold.otf');
+}
+
+.p1{
+	font-size: 30px;
+	font-family: 'Monoton-Regular';
+}
+.p2{
+	font-size: 30px;
+	font-family: 'Montserrat-Light';
+}
+.p3{
+	font-size: 30px;
+	font-family: 'Montserrat-ExtraBold';
+}
+.p4{
+	font-family: 'Helivetica';
+}
+
+
+
+
+@media (max-width:575.98px){
+
+}
+@media only screen (min-width:576px) and (max-width:767.98px){
+
+}
+@media only screen(min-width:768px) and (max-width:991.98px){
+
+}
+@media only screen(min-width:992px) and (max-width:1199.98px){
+	
+}
+@media (min-width:1200px){
+
+}
